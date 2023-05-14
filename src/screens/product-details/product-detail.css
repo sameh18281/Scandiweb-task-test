@@ -1,0 +1,198 @@
+.loading {
+	font-size: 28px;
+	font-weight: bolder;
+	text-transform: uppercase;
+	text-align: center;
+	height: 100%;
+}
+
+.product-details-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.preview-imgs {
+	flex-basis: 10%;
+	display: flex;
+	flex-direction: column;
+	padding: 16px;
+	height: 75vh;
+	overflow-y: auto;
+	overflow-x: hidden;
+	direction: rtl;	
+}
+
+.preview-imgs img {
+	margin: 0.2em auto;
+	height: 18vh;
+	cursor: pointer;
+	border: 1px solid black;
+	width: 100%;
+	object-fit: contain;
+	padding: 2px;
+
+}
+
+.preview-imgs img.selected-photo , .preview-imgs img.selected-photo:hover {
+	border: 3px solid #5ECE7B;
+}
+
+.preview-imgs img:hover {
+	border: 1px solid #c2c0c0;
+	box-shadow: 0px 1px 2px 0px black;
+	padding: 0;
+}
+
+.main-preview-img {
+	flex-basis: 50%;
+	margin: 1em;
+	display: flex;
+	height: 75vh;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	position: relative;
+}
+
+.main-preview-img.out {
+	opacity: 0.5;
+}
+
+.out-of-stock-details {
+	width: max-content;
+	position: absolute;
+	top: 47%;
+	left : 30%;
+	font-size: 3rem;
+	font-weight: bolder;
+	text-shadow: black;
+	opacity: 0.8;
+	cursor: not-allowed;
+}
+
+.main-preview-img img {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	object-fit: contain;
+}
+
+.details {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 28%;
+	padding: 15px;
+	margin-left: 5px;
+	height: 75vh;
+	overflow-y: auto;
+	overflow-x: hidden;
+	justify-content: space-between;
+}
+
+.details * {
+	margin-bottom: 15px;
+}
+
+.details .brand-name {
+	line-height: 27px;
+	font-weight: 600;
+	font-size: 30px;
+	font-family: 'Raleway', sans-serif;
+}
+
+.details .product-name {
+	line-height: 27px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 30px;
+}
+
+.details .attributes-container p,
+.price {
+	text-transform: uppercase;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.price p:last-child {
+	font-size: 24px;
+	font-family: 'Raleway', sans-serif;
+}
+
+.details .description {
+    font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 28px;
+}
+
+.attributes-container div div button {
+	padding: 20px 25px 20px 25px;
+	margin-right: 10px;
+	border: 1px solid #1d1f22;
+	background-color: transparent;
+	font-weight: 400;
+	font-family: 'Source Sans Pro', sans-serif;
+	line-height: 18px;
+	letter-spacing: 0.05em;
+	cursor: pointer;
+}
+
+.attributes-container div div button.selected {
+	color: white;
+	background: #1D1F22;
+	border: 1px solid #1D1F22;
+}
+
+.attributes-container div div button.swatch {
+	padding: 20px;
+}
+
+.attributes-container div div button.swatch.selected {
+	padding: 25px;
+}
+
+.disabled {
+	color: gray;
+}
+
+.attributes-container div div button.swatch.disabled,
+.attributes-container div div button.disabled {
+	cursor: not-allowed;
+	font-weight: bolder;
+}
+
+.details .details-btn button {
+	width: 95%;
+	border: none;
+	padding: 1em;
+	background-color: #5ECE7B;
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor: pointer;
+	margin-bottom: 5px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	line-height: 19.2px;
+}
+
+.details .details-btn button:hover,
+.size-buttons button:hover {
+	box-shadow: 1px 1px 2px 0px black;
+}
+
+.details .details-btn button.disabled {
+	color: gray;
+	background-color: transparent;
+	border: 2px solid gray;
+	cursor: not-allowed;
+	box-shadow: none;
+}
+
+@media screen and (min-width : 1500px) {
+	.preview-imgs {
+		flex-basis: 8%;
+	}
+}

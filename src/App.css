@@ -1,0 +1,23 @@
+.content-container {
+    padding: 40px;
+}
+
+ .error-boundary {
+     margin-top: 40vh;
+     text-align: center;
+ }
+
+ .cart-overlay, .dropdown-overlay {
+	position: fixed;
+	z-index: 20;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.3);
+	display: none;
+}
+
+.cart-overlay.active , .dropdown-overlay.active {
+	display: block;
+}

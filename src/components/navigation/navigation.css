@@ -1,0 +1,80 @@
+/* navigation container */
+
+.nav-container {
+    padding-right: 4%;
+    padding-left: 4%;
+    padding-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 22;
+    background-color: white;
+    position: relative;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-left: 1em;
+}
+
+.nav ul li{
+    text-transform: uppercase;
+    padding: 10px;
+    padding-bottom: 16px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.nav ul li.selected{
+    color : #5ECE7B;
+    border-bottom: 2px solid #5ECE7B;
+    transition: all 0.3s ease-in-out;
+}
+
+/* web logo */
+
+.logo img {
+    height: 8vh;
+    width: 8vh;
+    position: absolute;
+    padding: 5px;
+    top: 0;
+    left: 50%;
+}
+
+/* dropdown & cart  icons */
+
+.icons {
+    display: flex;
+    padding: 1em;
+    position: relative;
+}
+
+.icons p {
+    margin-right: 5px;
+}
+
+.currency {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    
+    .logo img {
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        padding: 5px;
+        top: 5px;
+        left: 50%;
+    }
+
+    .nav ul li{
+        font-size: 12px;
+    }
+  }

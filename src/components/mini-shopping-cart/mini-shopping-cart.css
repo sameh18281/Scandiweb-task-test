@@ -1,0 +1,252 @@
+/* mini cart button*/
+
+.nav-shopping-cart {
+	position: relative;
+}
+
+.nav-cart-btn {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	display: flex;
+	position: relative;
+}
+
+/* mini cart image */
+.nav-cart-btn img {
+	position: absolute;
+}
+
+.mini-cart-image {
+	position: relative;
+}
+.mini-cart-image .images-route {
+	display: flex;
+	position: absolute;
+	top: 45%;
+	width: 100%;
+	justify-content: space-between;
+	padding: 0.5rem;
+}
+
+.mini-cart-image .images-route * {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	size: 2rem;
+	background-color: rgba(0,0,0,0.4);
+	color: white;
+	padding: 5px;
+	cursor: pointer;
+}
+
+/* Number of cart items circle*/
+
+.nav-cart-btn .cart-info {
+	position: relative;
+	height: 20px;
+	width: 20px;
+	background-color: #5ece7b;
+	border-radius: 50%;
+	color: #fff;
+	font-size: 13px;
+	font-family: "Roboto", sans-serif;
+	top: -10px;
+	right: -15px;
+	text-align: center;
+}
+
+/* mini cart items container */
+
+.nav-shopping-cart .mini-cart {
+	display: none;
+	position: absolute;
+	right: 0;
+	bottom: -1;
+	margin-top: 1em;
+	padding: 1em;
+	background-color: white;
+	min-width: 25vw;
+	z-index: 21;
+	overflow-y: auto;
+	height: 50vh;
+}
+
+.nav-shopping-cart .mini-cart.cart-active {
+	display: block;
+}
+
+/* mini cart items */
+
+.nav-shopping-cart .mini-cart .mini-cart-items {
+	display: flex;
+}
+
+.mini-cart-details {
+	margin: 5px;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	flex-basis: 60%;
+}
+
+
+
+.mini-cart-image {
+	flex-basis: 40%;
+	height: 25vh;
+	align-self: center;
+}
+
+.mini-cart-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	object-position: right;
+}
+
+.my-bag {
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+}
+
+.mini-cart .no-of-items {
+	font-family: "Raleway", sans-serif;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: 400;
+}
+
+.mini-cart-details .cart-brand,
+.mini-cart-details .cart-product {
+	font-family: "Raleway", sans-serif;
+	font-weight: 300;
+	line-height: 25.6px;
+}
+
+.mini-cart-details .cart-price {
+	font-family: "Raleway", sans-serif;
+	font-weight: 500;
+}
+
+.second-section,
+.first-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: flex-start;
+}
+
+.first-section {
+	margin-right: 5px;
+}
+
+.plus-btn,
+.minus-btn {
+	border: 1px solid black;
+	padding: 5px;
+	background-color: transparent;
+	text-align: center;
+	cursor: pointer;
+	width: 2vw;
+}
+
+.plus-btn:hover,
+.minus-btn:hover {
+	box-shadow: 0px 1px 2px 0px black;
+}
+
+.mini-cart-quantity {
+	font-weight: bold;
+	align-self: center;
+	font-weight: 500;
+	font-family: 'Raleway', sans-serif;
+}
+
+/* attributes buttons */
+
+.mini-size-btns {
+	display: flex;
+	flex-direction: column;
+}
+
+.mini-size-btns * {
+	margin-top: 5px;
+}
+
+.mini-size-btns div button {
+	border: 1px solid black;
+	text-transform: uppercase;
+	padding: 5px;
+	background-color: white;
+	color: black;
+	margin-right: 5px;
+	font-weight: 400;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
+	line-height: 160%;
+}
+
+.mini-size-btns button.color {
+	padding: 15px;
+}
+
+/* Total */
+.total {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+.total #total-p {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	line-height: 18px;
+}
+
+.total #total-number {
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	line-height: 25.6px;
+}
+
+/* checkout and view bag buttons */
+
+.mini-cart-btns {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.mini-cart-btns button {
+	border: none;
+	outline: none;
+	background-color: transparent;
+	padding: 10px;
+	margin: 5px;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.mini-cart-btns .view-bag {
+	border: 1px solid #1d1f22;
+}
+
+.mini-cart-btns .checkout {
+	background-color: #5ece7b;
+	color: white;
+}
+
+.mini-cart-btns .view-bag:hover,
+.mini-cart-btns .checkout:hover {
+	box-shadow: 0px 0px 2px 0px black;
+}
+
+/* text if cart is empty */
+.mini-empty {
+	font-size: 18px;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+}
